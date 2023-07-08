@@ -1,4 +1,7 @@
-@mixin before_circle {
+@mixin before_circle_fz16 {
+    position: relative;
+    padding: 1px 0 0 12px;
+    z-index: 1;
     &:before {
         content: '';
         position: absolute;
