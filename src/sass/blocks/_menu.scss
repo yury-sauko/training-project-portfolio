@@ -67,7 +67,7 @@
             height: 15px;
             border-radius: 50%;
             border: 1px solid $text-color;
-            transition: all 0.6s;
+            transition: all 0.4s;
         }
         &:hover {
             &:before {
@@ -87,8 +87,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        img {
+        svg {
             transform: rotate(90deg);
+            &:hover {
+                path {
+                    fill: #fff;
+                    transition: fill 0.4s;
+                }
+            }
         }
     }
     &__overlay {
