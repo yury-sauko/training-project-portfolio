@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const skillsPercent = document.querySelectorAll('.skills__percentages-item-percent'),
+      skillsRange = document.querySelectorAll('.skills__percentages-item-range');
+
+skillsPercent.forEach( (item, i) => {
+    skillsRange[i].style.width = item.innerHTML;
+});

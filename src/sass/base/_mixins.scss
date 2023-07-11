@@ -14,3 +14,20 @@
         background-color: $main-color;
     }
 }
+
+@mixin before_circle_fz14 {
+    @include before_circle_fz16;
+    &:before {
+        top: -30%;
+    }
+}
+
+@mixin before_circle_center {
+    @include before_circle_fz16;
+    padding: 0;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+}

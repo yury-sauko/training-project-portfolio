@@ -2,13 +2,7 @@
     padding-top: 120px;
     &__title {
         text-align: center;
-        @include before_circle_fz16;
-        padding: 0;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        @include before_circle_center;
     }
     &__subtitle {
         text-align: center;
