@@ -1,0 +1,37 @@
+.portfolio {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        @include before_circle_center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 280px);
+        column-gap: 5px;
+        grid-template-rows: repeat(2, 280px);
+        row-gap: 5px;
+        grid-auto-rows: 280px;
+        .vertical {
+            grid-column: 4 / 5;
+            grid-row: 1 / 3;
+        }
+        .horizontal {
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+        }
+    }
+    &__link {
+        &:hover {
+            filter: sepia(100%);
+            transition: filter 0.4s;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
