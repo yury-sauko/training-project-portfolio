@@ -13,6 +13,7 @@
             &:hover {
                 path {
                     fill: #ff9900;
+                    transition: fill 0.4s;
                 }
             }
         }
