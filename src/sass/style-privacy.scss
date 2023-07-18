@@ -1,0 +1,76 @@
+$bgColor: #f5fffa;
+$bgLinkColor: #faf6e5;
+$textColor: #212121;
+$linkHoverColor: #0290ff;
+$linkActiveColor: #9c009c;
+$outlineColor: #212121;
+$outlineLinkColor: #0290ff;
+
+* {
+    font-family: 'Times New Roman', serif;
+    color: $textColor;
+}
+
+body {
+    margin: 0;
+    background-color: $bgColor;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.privacy {
+    padding: 15px 30px 30px;
+    h1 {
+        text-align: center;
+    }
+    h1, h3 {
+        span {
+            &:focus {
+                outline: 2px dashed $outlineColor;
+                outline-offset: 3px;
+            }
+        }
+    }
+    p {
+        margin-block-end: 0;
+    }
+    a {
+        background-color: $bgLinkColor;
+        &:focus {
+            outline: 2px dashed $outlineLinkColor;
+            outline-offset: 3px;
+            color: $linkHoverColor;
+        }
+        &:hover {
+            color: $linkHoverColor;
+            transition: color 0.2s linear;
+        }
+        &:active {
+            outline: none;
+            color: $linkActiveColor;
+            transition: color 0.2s linear;
+        }
+    }
+    ul {
+        margin: 0;
+        padding-inline-start: 1.5em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    body {
+        font-size: 14px;
+    }
+    .privacy {
+        padding: 10px 20px 20px;
+    }
+}
+
+@media (max-width:  575.98px) {
+    body {
+        font-size: 12px;
+    }
+    .privacy {
+        padding: 5px 15px 15px;
+    }
+}
