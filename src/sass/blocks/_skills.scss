@@ -15,6 +15,7 @@
         grid-template-rows: repeat(2, minmax(270px, auto));
         row-gap: 13px;
         grid-auto-rows: minmax(270px, auto);
+        justify-content: center;
         &-item {
             border: 1px solid #000;
             padding: 30px 30px 25px;
